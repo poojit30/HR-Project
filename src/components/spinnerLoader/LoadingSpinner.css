@@ -1,0 +1,33 @@
+.smooth-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.smooth-load-spinner {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #000000 0%,
+        #000000 25%,
+        #ffffff 25%,
+        #ffffff 50%,
+        #000000 50%,
+        #000000 75%,
+        #ffffff 75%,
+        #ffffff 100%
+    );
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
